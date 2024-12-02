@@ -1,0 +1,235 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b32;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgb(244, 243, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 8px 12px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #007bff;
+}
+
+.controls h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#summary {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.loss {
+    color: green;
+}
+
+.gain {
+    color: red;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day-label {
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+}
+
+.day {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day.sunday {
+    background: #eaf7ea;
+    font-weight: bold;
+}
+
+.day p {
+    margin: 5px 0;
+}
+
+.day .weight {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.day .average {
+    font-size: 12px;
+    color: #28a745;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#prevMonth {
+    background-color: black;
+    width: 60px;
+}
+
+#monthYear {
+    text-align: center;
+}
+
+#nextMonth {
+    background-color: black;
+    width: 60px;
+}
+
+#nextMonth:hover {
+    color: white;
+}
+
+#prevMonth:hover {
+    color: white;
+}
+.nav{
+    width: 95%;
+    height: 40px;
+    text-align: end;
+    color: white;
+    padding-top: 40px;
+    margin-right: 20px;
+}
+.nav a{
+    text-decoration: underline;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .controls h2 {
+        font-size: 20px;
+    }
+
+    .controls button {
+        font-size: 18px;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+    }
+
+    .day {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .day .weight {
+        font-size: 12px;
+    }
+
+    .day .average {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+
+    .controls h2 {
+        font-size: 18px;
+    }
+
+    .day {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .day .weight {
+        font-size: 10px;
+    }
+
+    .day .average {
+        font-size: 8px;
+    }
+}

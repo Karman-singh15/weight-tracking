@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Weight Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">Made By <a href="">Karman Singh</a></div>
+    <div class="container">
+        <h1>Monthly Weight Tracker</h1>
+        <div class="controls">
+            <button id="prevMonth">←</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">→</button>
+        </div>
+        <div id="summary"></div>
+        <form id="weightForm">
+            <label for="weight">Enter today's weight (kg):</label>
+            <input type="number" id="weight" step="0.1" placeholder="e.g., 70.5">
+            <button type="submit">Add Weight</button>
+        </form>
+        <div class="calendar" id="calendar">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
